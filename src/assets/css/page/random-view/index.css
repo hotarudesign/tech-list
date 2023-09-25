@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px 0;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container .btn {
+  display: block;
+  padding: 12px 0;
+  width: 250px;
+  font-weight: 900;
+  font-size: 2rem;
+  text-align: center;
+  background: #222;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  transition: ease-in 0.5s;
+}
+.container .btn:hover {
+  background: #fff;
+  color: #222;
+  border: 2px solid transparent;
+  transition: ease-in 0.5s;
+}

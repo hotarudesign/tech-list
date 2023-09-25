@@ -1,0 +1,65 @@
+@use "../../base/variable" as v;
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .circle {
+    margin: 0 auto;
+    max-width: 400px;
+    width: 80vw;
+    max-height: 400px;
+    height: 80vw;
+    position: relative;
+    @include v.sm {
+      width: 50vw;
+      height: 50vw;
+    }
+    &__line {
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
+      background-image: conic-gradient(#fff 45deg, transparent 45deg);
+      clip-path: circle();
+      display: grid;
+      place-items: center;
+      &:before {
+        content: "";
+        display: block;
+        width: 99.8%;
+        height: 99.8%;
+        background: #fff;
+        clip-path: circle();
+      }
+    }
+    &__list {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 38%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(90deg);
+      z-index: 10;
+      @include v.sm {
+        top: 32%;
+      }
+    }
+    &__item {
+      display: block;
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(45deg, #fff, #609ff8);
+      border-radius: 50%;
+      position: absolute;
+      transform: translate(0, -50%);
+      opacity: 1;
+      z-index: 2;
+      @include v.sm {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}
