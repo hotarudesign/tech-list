@@ -1,0 +1,22 @@
+@use "../../base/variable" as v;
+
+.splide {
+  height: 100vh;
+  &__track {
+    height: 100%;
+  }
+  &__list {
+    height: 100%;
+  }
+  &__slide {
+    margin: auto 0;
+    font-weight: 900;
+    font-size: 3vw;
+    @include v.md {
+      font-size: 5vw;
+    }
+    @include v.sm {
+      font-size: 5vw;
+    }
+  }
+}
