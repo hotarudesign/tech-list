@@ -1,0 +1,40 @@
+@use "../../base/variable" as v;
+
+.container {
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.block {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  @include v.sm {
+    width: 100px;
+    height: 100px;
+  }
+}
+.circle {
+  overflow: visible;
+  animation: rotation 18s linear infinite;
+  &__shape {
+    fill: none;
+  }
+  &__txt {
+    fill: #222;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link rel="icon" href="" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <link rel="stylesheet" href="../assets/css/base/reset.css" />
+    <link rel="stylesheet" href="../assets/css/base/common.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/css/page/circle-text-animation/index.css"
+    />
+    <title>circle-Text-Animation</title>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <div class="block">
+          <svg class="circle" viewBox="0 0 100 100">
+            <path
+              id="circle"
+              class="circle__shape"
+              d="M 0 50 A 50 50 0 1 1 0 51 z"
+            />
+            <text class="circle__txt">
+              <textPath xlink:href="#circle">
+                Coding & Design Coding & Design Coding & Design
+              </textPath>
+            </text>
+          </svg>
+        </div>
+      </section>
+    </main>
+    <script src="../assets/js/circle-text-animation/index.js"></script>
+  </body>
+</html>

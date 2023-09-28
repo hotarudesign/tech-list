@@ -1,0 +1,53 @@
+.container {
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.block {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+}
+@media not screen and (min-width: 576px) {
+  .block {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.circle {
+  overflow: visible;
+  -webkit-animation: rotation 18s linear infinite;
+          animation: rotation 18s linear infinite;
+}
+.circle__shape {
+  fill: none;
+}
+.circle__txt {
+  fill: #222;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
