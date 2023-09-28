@@ -1,12 +1,18 @@
 @charset 'UTF-8';
 @use "./variable" as v;
 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap");
+
 html {
   font-size: 62.5%;
 }
 img {
   max-width: 100%;
   height: auto;
+}
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #222;
 }
 .inner {
   max-width: 1280px;

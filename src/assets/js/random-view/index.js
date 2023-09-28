@@ -1,6 +1,7 @@
 "use strict";
 
 const view = document.querySelector(".container");
+const mask = document.querySelector(".container__mask");
 const nextBtn = document.querySelector(".btn-next");
 const reloadBtn = document.querySelector(".btn-reload");
 const homeBtn = document.querySelector(".btn-home");
