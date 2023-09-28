@@ -9,7 +9,32 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  transition: 1s;
+}
+.container.fade {
+  -webkit-animation: fade 1s;
+          animation: fade 1s;
+}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .container .btn {
   display: block;

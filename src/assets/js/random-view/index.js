@@ -19,14 +19,22 @@ window.addEventListener("DOMContentLoaded", () => {
   let firstBg = BG_ALLAY[changeRand];
   view.style.backgroundImage = firstBg;
   nextBtn.addEventListener("click", () => {
-    BG_ALLAY.splice(changeRand, 1);
-    changeRand = Math.floor(Math.random() * BG_ALLAY.length);
-    let secondeBg = BG_ALLAY[changeRand];
-    view.style.backgroundImage = secondeBg;
-    if (BG_ALLAY.length === 1) {
+    view.classList.add("fade");
+    setTimeout(() => {
+      BG_ALLAY.splice(changeRand, 1);
+      changeRand = Math.floor(Math.random() * BG_ALLAY.length);
+      let secondeBg = BG_ALLAY[changeRand];
+      view.style.backgroundImage = secondeBg;
+    }, 400);
+    setTimeout(() => {
+      view.classList.remove("fade");
+    }, 1000);
+    if (BG_ALLAY.length === 2) {
       nextBtn.style.display = "none";
-      reloadBtn.style.display = "block";
-      homeBtn.style.display = "block";
+      setTimeout(() => {
+        reloadBtn.style.display = "block";
+        homeBtn.style.display = "block";
+      }, 800);
     }
   });
 });
