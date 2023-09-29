@@ -6,9 +6,9 @@ const nextBtn = document.querySelector(".btn-next");
 const reloadBtn = document.querySelector(".btn-reload");
 const homeBtn = document.querySelector(".btn-home");
 const BG_ALLAY = [
-  "url(../../assets/images/webp/random-view01.webp)",
-  "url(../../assets/images/webp/random-view02.webp)",
-  "url(../../assets/images/webp/random-view03.webp)",
+  "url(../assets/images/webp/random-view01.webp)",
+  "url(../assets/images/webp/random-view02.webp)",
+  "url(../assets/images/webp/random-view03.webp)",
 ];
 let changeRand = 0;
 
