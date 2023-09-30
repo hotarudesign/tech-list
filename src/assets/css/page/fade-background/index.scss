@@ -1,0 +1,27 @@
+@use "../../base/variable" as v;
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.splide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  &__track {
+    height: 100%;
+  }
+  &__slide {
+    width: 100%;
+    img {
+      transition: 8s ease-out;
+    }
+    &.is-active img {
+      transform: scale(1.15);
+      transition-delay: 0s;
+    }
+  }
+}

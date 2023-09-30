@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.splide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.splide__track {
+  height: 100%;
+}
+.splide__slide {
+  width: 100%;
+}
+.splide__slide img {
+  transition: 8s ease-out;
+}
+.splide__slide.is-active img {
+  transform: scale(1.15);
+  transition-delay: 0s;
+}
